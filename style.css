@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: darkgoldenrod;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.game-snake {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+#canvas {
+  background-color: indigo;
+  border: 2px solid #ccc;
+}
+.score {
+  padding: 0.6rem 0;
+  color: #ccc;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+#options {
+  background-color: indigo;
+  box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.1);
+  border: 0;
+  color: white;
+  border-radius: 0.2rem;
+  padding: 3px 10px 3px 3px;
+  outline: none;
+}
+.controller {
+  width: 120px;
+  height: 120px;
+  margin-top: 2rem;
+  transform: rotate(-45deg);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  border: 0.5px solid #0003;
+}
+.controller .arrow {
+  border: 0.5px solid #00000033;
+}
+.controller .arrow:active {
+  background-color: rgb(192, 174, 127);
+}
